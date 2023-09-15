@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login tailwind</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body class="bg-gradient-to-br from-zinc-900 to-zinc-800 w-screen h-screen w-screen h-screen flex justify-center items-center">
+  <section class="w-1/2 bg-zinc-950 rounded-3xl flex justify-center">
+    <section id="form" class="basis-full lg:basis-5/12 flex flex-col text-white px-10 pb-10">
+      <h1 class="font-sans text-3xl text-white my-12 font-bold">
+        Faça o seu login
+        <span class="w-3 h-3 bg-red-300 rounded-full inline-block bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70]"></span>
+      </h1>
+      <form action="" class="flex flex-col gap-8 text-gray-400">
+        <label class="group h-16">
+          Email
+          <div class="transition-opacity ease-in opacity-0 group-focus-within:opacity-100  h-10 w-full bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] rounded-lg blur-md"></div>
+          <div class="relative -top-10 bg-none focus-within:bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] p-[1px] rounded-lg">
+          <input type="email" class="h-10 bg-zinc-800 rounded-lg p-2 outline-none appearance-none w-full">
+          </div>
+        </label>
+        <label class="group h-16">
+          Senha
+          <div class="transition-opacity ease-in opacity-0 group-focus-within:opacity-100 h-10 w-full bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] rounded-lg blur-md"></div>
+          <div class="relative -top-10 bg-none focus-within:bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] p-[1px] rounded-lg">
+          <input type="password" class="h-10 bg-zinc-800 rounded-lg p-2 outline-none appearance-none w-full">
+          </div>
+        </label>
+        <a class="text-right text-sm underline cursor-pointer">Esqueci minha senha</a>
+        <button type="submit" class="bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] text-white font-bold h-10 rounded-lg">Entrar</button>
+        <a class="text-center text-sm underline cursor-pointer">Ainda não tenho uma conta</a>
+      </form>
+    </section>
+    <section id="picture" class="w-0 md:w-7/12 bg-[url(/background/bg.jpg)] bg-cover rounded-r-3xl shadow-[inset_400px_30px_400px_-100px_theme('colors.zinc.950')] opacity-70"></section>
+  </section>
+</body>
+</html>
